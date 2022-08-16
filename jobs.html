@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            window.addEventListener("load",start,false);
+            function start()
+            {
+                document.getElementById("languages").addEventListener("mousemove",mouse1,false);
+                document.getElementById("languages").addEventListener("mouseout",out1,false);
+
+            }
+            function mouse1()
+            {
+                document.getElementById("c").innerHTML="C programming language is a machine-independent programming language that is mainly used to create many types of applications and operating systems such as Windows, and other complicated programs such as the Oracle database, Git, Python interpreter, and games and is considered a programming foundation in the process of learning any other programming language. Operating systems and diverse application software for computer architectures ranging from supercomputers to PLCs and embedded systems are examples of such applications";
+            }
+            function out1()
+            {
+                document.getElementById("c").innerHTML="";
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div class="container">
+                    
+            <div style="font-size: 35px; font-weight: 600;font-family: Arial, Helvetica, sans-serif;padding: 20px;">
+                <span style='color:#FF0000;'>G</span><span style='color:#E2001C;'>e</span><span style='color:#C60038;'>t</span> <span style='color:#8D0071;'>H</span><span style='color:#71008D;'>i</span><span style='color:#5400AA;'>r</span><span style='color:#3800C6;'>e</span><span style='color:#1C00E2;'>d</span>    </div>
+                        
+        
+            
+            <br><br>
+            <n style="font-size: 20px;">List of jobs in companies</n>
+            <br><br>
+
+        <table class="table table-hover" style="background-color: darkgrey;font-size: 25px;">
+            <tr style="color: blue;background-color: cyan;">
+                <th>company name</th>
+                <th>roles</th>
+              </tr>
+            <tr>
+                <td>amazon</td>
+                <td>software engineer</td>
+            </tr>
+            <tr>
+                <td>Aspiren systems</td>
+                <td>cyber security engineer</td>
+            </tr>
+            <tr>
+                <td>Bhavan Cybertech</td>
+                <td>Data analyst</td>
+            </tr>
+            <tr>
+                <td>Consim</td>
+                <td>Database administrator</td>
+            </tr>
+            <tr>
+                <td>Cognizant</td>
+                <td>Network engineer</td>
+            </tr>
+            <tr>
+                <td>HCL</td>
+                <td>data scientist</td>
+            </tr>
+            <tr>
+                <td>Paypal</td>
+                <td>Cloud Architect</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>Database management</td>
+            </tr>
+        </table>
+
+        <br><br><br><hr><br><br>
+        <div class="row">
+            <div class="col-md-6">
+            
+    <h style="font-size: 30px ;color: firebrick;font-family: 'Times New Roman', Times, serif;background-color: rgb(179, 214, 214);padding: 5px;">Skills required for IT jobs</h><br>
+    <ul type="square" style="font-size: 25px; background-color: azure;">
+        <div id="languages">
+                    <li >Programming languages</li>
+        <ul type="circle">
+            <li>C</li>
+            <p id="c"></p>
+            <li>Java</li>
+            <p id="java"></p>
+            <li>Python</li>
+            <p id="python"></p>
+            <li>C++</li>
+            <p id="c++"></p>
+        </ul>
+    </div>
+
+        <li>operating Systems</li>
+        <li>Networks</li>
+        <li>Application devoloping skills</li>
+        <ul type="circle">
+            <li>Html</li>
+
+            <li>CSS</li>
+            <li>Kotin</li>
+            <li>Javascrpit</li>
+            <li>ReactJS</li>
+        </ul>
+        <li>Frameworks</li>
+        <ul type="circle">
+            <li>Django</li>
+            <li>Spring boot</li>
+            <li>Angular</li>
+        </ul>
+        <li>software Testing </li>
+    </ul>
+            </div>
+    <div class="col-md-6">
+        <img src="assets/jobs.jpg" width=110%>
+    </div>
+    <div class="col-md-1"></div>
+        </div>
+        <br><br><hr><br>
+<div class="king">
+    <center>
+        <a href="#post">Post Your Resume</a>
+        <br>
+        <br><br>
+        <hr>
+    </center>
+</div>
+</div>
+<hr>
+<link rel="stylesheet" href="jobs.css">
+<link rel="stylesheet" href="home.css">
+    </body>
+</html>

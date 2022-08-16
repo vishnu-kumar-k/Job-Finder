@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+          .aboutus p{
+font-size: 22px;
+padding: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .aboutus a{
+   text-align: center;
+font-size: 20px;
+padding: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+.aboutus{
+  background-color: #333;
+  color: rgb(251, 251, 251);
+}
+.aboutus h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 45px;
+  color: rgb(255, 8, 8);
+}
+.the a{
+            color: rgb(14, 6, 241);
+            font-size: 25px;
+            
+          }
+          .the p{
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(10, 10, 10);
+          }
+          
+          body .bbbootstrap {
+      background-image: url(assets/finder.jpg) !important;
+      background-size:100%;
+      padding: 150px 0 20px 0
+  }
+  
+  .bbbootstrap {
+      padding: 10px;
+      margin-bottom: 10px;
+      color: rgb(44, 159, 176);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      background-color: #2e9df7;
+      -webkit-box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) inset, 0 -15px 15px -15px rgba(0, 0, 0, 0.25) inset;
+      box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) inset, 0 -15px 15px -15px rgba(0, 0, 0, 0.25) inset
+  }
+  
+  .bbbootstrap form {
+      position: relative;
+      width: 300px;
+      margin: 22px auto 0
+  }
+  
+  span {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: 100%;
+      font-family: inherit;
+      vertical-align: baseline
+  }
+  
+  .bbbootstrap form input[type="text"] {
+      padding: 15px 20px;
+      padding-right:50px;
+      border-color: transparent;
+      border-radius: 8px
+  }
+  
+  input.InputBox {
+      font-family: "lucida grande", "Lucida Sans Unicode", tahoma, sans-serif;
+      color: #333;
+      font-size: 15px;
+      padding: 3px;
+      margin: 0;
+      width: 150px;
+      background: rgb(226, 219, 219);
+      border: 1px solid #999;
+      border: 1px solid rgba(0, 0, 0, 0.4)
+  }
+  
+  input[type=text] {
+      box-sizing: border-box
+  }
+  
+  .InputBox {
+      display: block;
+      width: 100% !important;
+      padding: 4px 10px;
+      font-size: 14px;
+      line-height: 22px;
+      border-radius: 4px
+  }
+  
+  .bbbootstrap form input[type="submit"] {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      float: right;
+      padding: 10px 25px
+  }
+  
+  body .Button,
+  body .button {
+      background-color: #1268b3;
+      background-image: none
+  }
+  
+  input[type="submit"] {
+      -webkit-appearance: button;
+      cursor: pointer
+  }
+  
+  .Button,
+  .Button:hover,
+  .Button:focus,
+  .Button:active {
+      text-shadow: none;
+      border-color: transparent
+  }
+  
+  .Button {
+      display: inline-block;
+      padding: 6px 12px;
+      vertical-align: middle;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase;
+      border: transparent solid 1px;
+      border-radius: 3px;
+      -webkit-transition: -webkit-box-shadow 50ms;
+      transition: -webkit-box-shadow 50ms;
+      -o-transition: box-shadow 50ms;
+      transition: box-shadow 50ms;
+      transition: box-shadow 50ms, -webkit-box-shadow 50ms;
+      -webkit-font-smoothing: inherit;
+      color: rgb(247, 244, 244);
+      background-color: #2e9df7;
+      background-repeat: repeat-x;
+      background-color: #38a2f7;
+      background-image: -webkit-linear-gradient(#38a2f7, #2498f7);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#38a2f7), to(#2498f7));
+      background-image: -o-linear-gradient(#38a2f7, #2498f7);
+      background-image: linear-gradient(#38a2f7, #2498f7)
+  }
+  .cards{
+   background-color:rgb(204, 196, 196);
+   border-radius: 10px;
+  }
+  .cards:hover{
+    background-color: #e7f0f5;
+  }
+  .over{
+    padding: 30px;
+  }
+  .text{
+    padding: 15px;
+  }
+  
+  .cards h2{
+    color:blue;
+  }
+  .cards k{
+    color: rgb(7, 7, 7);
+  }
+  .link a{
+    background-color: rgb(249, 250, 248);
+    color: rgb(225, 11, 11);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .link a:hover{
+    color: #f9f4f4;
+    text-decoration: none;
+    background-color: rgb(249, 5, 5);
+  }
+  
+
+  
+   </style>
+        
+<nav class="navbar navbar-inverse  navbar-expand-lg  text-dark" style="background-color: rgba(3, 3, 3, 0.986);font-size: 20px;">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div style="font-size: 35px; font-weight: 600;font-family: Arial, Helvetica, sans-serif;padding: 0 12px 0 12px;">
+<span style='color:#FF0000;'>G</span><span style='color:#E2001C;'>e</span><span style='color:#C60038;'>t</span> <span style='color:#8D0071;'>H</span><span style='color:#71008D;'>i</span><span style='color:#5400AA;'>r</span><span style='color:#3800C6;'>e</span><span style='color:#1C00E2;'>d</span>    </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop">Explore<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: rgb(232, 238, 240);font-size: 15px;color: #fff;" id="down">
+            <li><a href="jobs.html" style="font-size: 20px;">Jobs</a></li>
+            <li><a href="explore.html" style="font-size: 20px;">Skills needed</a></li>
+          </ul>
+        </li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li> <a href="usersignup.html"><span class="glyphicon glyphicon-user"></span> signup</a></li>
+         <li> <a href="login.html"><span class="glyphicon glyphicon-log-in "></span> Login</a></li>
+          
+        
+        
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+</nav>
+    </head>
+    <body >
+      <div >
+      <div class="container">
+
+      <div class="bbbootstrap">
+        <div class="container">
+          <form>
+              <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" id="Form_Search" style="background-color: #ede5e4;" value="" placeholder="Search for dream job" role="searchbox" class="InputBox " autocomplete="off"><input type="submit" id="Form_Go" class="Button" value="GO">
+          </form>
+      </div>
+      </div>
+      <div class="the">
+      <div class="row" style="padding: 0px 25px;">
+        <div class="col-sm-6">
+        <h1 style="color: rgb(8, 8, 8);font-size: 20px;font-weight: bolder;">
+         Login Today & Explore Our career 
+      opportunities and live the Aflac Dream....!
+        </h1>
+        <br>
+        
+        <n style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 30px;font-weight: 700;">Find the career you deserve...?</n><br><br>
+        <a href="jobs.html" >SEE OUR CURATED JOBS</a>
+        <br>
+      </div>
+        
+        <div class="col-sm-5 col-xl-12">
+        <img src="assets/two.jpg" alt="home" width="100%" style="padding: 14px;">
+      </div>
+      </div>
+        <br><br>
+        <div class="row" style="padding:0px 25px ; ">
+          
+          <div class="col-sm-5">
+            <img src="assets/threee.jpg" id="picture" alt="load" width="100%" style="padding: 14px;">
+          </div>
+          <div class="col-md-6">
+            <br>
+            <p >Chase Your dream!!!....<br>By choosing the Best</p>
+            
+            <br>
+            <a href="cv.html">Post Your CV</a>
+          </div>
+        </div>
+      </div>
+      <br><hr>
+      </div>
+                
+      <!--++++++++++++++++++++++++++++++++++ creating for jobs +++++++++++++++++++++++++++++++++++-->
+     
+       <div class="container ">
+         <h1 style="color: crimson;font-weight: 600; background-color: rgb(246, 244, 244); padding: 20px; font-size: 25px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Available Jobs</h1>
+        <div class="cards">
+         <div class="row">
+           <div class="image">
+             <div class="col-md-4">
+               <div class="over">
+                 <img src="assets/company5.png" width="100%">
+               </div>
+             </div>
+             <div class="col-md-8">
+               <div class="text">
+                 <h2>Lead Administrator</h2>
+                 <br>
+                 <a href="https://www.wipro.com/" target="_new" style="font-size: 20px;font-weight: 500;color: rgb(34, 0, 255);">Visit website</a><br>
+                  <b>Location:</b>Coimbatore, India.<br>
+                 <b> Rl id:</b>2813768.
+                 <h3> Full time</h3>
+                 <k><b> Role Purpose:</b><br>
+                  The purpose of this role is to provide significant technicalexpertise in architecture planning and design of the concerned tower(platform, database, middleware, backup etc) as well as managing itsday-to-day operations
+                </k><br><br>
+                  Post two days ago.
+                  
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="link">
+           <div class="col-xs-1"></div>
+           <div class="col-xs-5">
+             <a href="#">post here</a>
+           </div>
+           <div class="col-xs-6">
+             <a href="https://careers.wipro.com/careers-home/jobs/2813768?lang=en-us&previousLocale=en-US&utm_campaign=google_jobs_apply&utm" target="_new">post directly</a>
+           </div>
+           <br><br><br>
+         </div>
+        </div>
+       </div>
+
+       <br>
+       <div class="cards">
+        <div class="row">
+          <div class="image">
+            <div class="col-md-4">
+              <div class="over">
+                <img src="assets/abcd.jpg" width="100%">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="text">
+                <h2>Programmer analyst</h2>
+               <br> <a href="https://www.cognizant.com/in/en" target="_new" style="color: rgb(51, 0, 255);font-size: 20px; font-weight: 500;">Visit website</a><br>
+                 <b>Location:</b> Chennai, Tamil Nadu, India<br>
+                <b> Rl id:</b>2813768.
+                <h3> Full time</h3>
+                <k><b> Role Purpose:</b><br>
+                  Stakeholder Management. Service Management. Manage tickets and tasks escalated by the Level 1 team (Service Operations' analyst) and also handle Customer requests assigned by the Lead. Alert Leads for..
+               </k><br><br>
+                 Post three days ago.
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="link">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-5">
+            <a href="#">post here</a>
+          </div>
+          <div class="col-xs-6">
+            <a href="https://careers.cognizant.com/in/en/job/000439274238/Programmer-Analyst" target="_new">post directly</a>
+          </div>
+          <br><br><br>
+        </div>
+       </div>
+      </div>
+     </div>
+     <br>
+           <!--++++++++++++++++++++++++++++++++++ hiring poster +++++++++++++++++++++++++++++++++++-->
+            <!--++++++++++++++++++++++++++++++++++ hiring poster +++++++++++++++++++++++++++++++++++-->
+<div style="background-color: rgb(252, 248, 248)">
+  <br><br>
+      <div class="container" >
+        <div class="row" style="padding: 0px 25px;">
+          <div class="col-sm-5">
+            <img src="assets/four.jpg" width="100%" style="padding: 14px;">
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
+            <div class="the">
+              <br>
+              <p>Looking to hire ...?</p>
+              <p>pick the top talents for your growing bussiness!!! </p>
+              <a href="company sign.html" id="job">Join our community</a>
+            </div>
+            <div class="the">
+              <p id="join"></p></div>
+          </div>
+        </div>
+      </div>
+     
+      <br></div>
+    </div>
+     <br><hr><br id="aboutus">
+           
+<!--+++++++++++++++++++++++++++++ABOUT US-->
+<div class="aboutus">
+<div class="container">
+
+  <h1 id="aboutus">About us</h1>
+   <p>Welcome to Get Hired, your number one source for all software jobs.<br> We're dedicated to providing you the very best of our services, with an emphasis on  providing you the job.<br>
+
+
+    Founded in 2022 by Vishnu, Get Hired has come a long way from its beginnings in Tamil Nadu. When Vishnu first started out, his passion for to get all hired drove them to start their own business.
+    
+    
+   <br> We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+   <br><hr id="contact"><br>
+   <h1 id="contact">Contact Us</h1>
+
+  
+      <p >Get in Touch with Us.<br>
+       <i class="glyphicon glyphicon-phone-alt"></i> Phone number:<a href="tel: 044-123456">044-123567</a><br><i class="glyphicon glyphicon-envelope" ></i>Email:<a style="color:#38a2f7;text-decoration: underline;"href="mailto:gethired@gmail.com">gethired@gmail.com</a><br><i class="glyphicon glyphicon-earphone"></i> Whatsapp:<a href="https://wa.me/+919361632682">+919361632682</a><br></p>
+       <br><hr><br>
+     <h1 style="font-size: 30px;">Follow Us</h1>
+     <div class="row">
+       <div class="col-xs-4">
+     <a href="#">Facebook</a><br></div>
+     <div class="col-xs-4">
+     <a href="#">Instagram</a><br></div>
+     <div class="col-xs-4">
+     <a href="#">Twitter</a></div>
+
+    </div>
+    <br><hr>
+    <h5 style="text-align: center;">Copyright &#169; 2022 Get Hired.All Rights Reserved</h3>
+      <a href="#top" style="color: #e7f0f5; text-align: right;"><i class="glyphicon glyphicon-arrow-up" style="text-align: right;"></i></a>
+</div>
+</div>
+
+    <link rel="stylesheet" href="home.css">
+    </body>
+</html>
